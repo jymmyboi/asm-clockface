@@ -14,7 +14,8 @@
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
     "requestedPermissions": [
-      "access_activity"
+      "access_activity",
+      "user_settings"
     ],
     "buildTargets": [
       "atlas",

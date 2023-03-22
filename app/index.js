@@ -2,7 +2,7 @@ import clock from "clock";
 import * as document from "document";
 import { preferences } from "user-settings";
 import { me as appbit } from "appbit";
-import { goals } from "user-activity";
+import { today } from "user-activity";
 
 function zeroPad(i) {
   if (i < 10) {
@@ -20,8 +20,8 @@ const stepsLabel = document.getElementById("stepsLabel")
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
-  let today = evt.date;
-  let hours = today.getHours();
+  let now = evt.date;
+  let hours = now.getHours();
   if (preferences.clockDisplay === "12h") {
     // 12h format
     hours = hours % 12 || 12;
@@ -29,14 +29,15 @@ clock.ontick = (evt) => {
     // 24h format
     hours = zeroPad(hours);
   }
-  let mins = zeroPad(today.getMinutes());
+  let mins = zeroPad(now.getMinutes());
   myLabel.text = `${hours}:${mins}`;
+  
   if (appbit.permissions.granted("access_activity")) {
+    let stepsValue = (today.adjusted.steps);
     try{
-        console.log(`${today.adjusted.steps} Steps`);
-        stepsLabel.text = `${today.adjusted.steps} Steps`;
+        console.log(stepsValue);
+        stepsLabel.text = stepsValue;
     } catch {
-        console.log("Could not access steps");
         stepsLabel.text = 0;
     }
  }
