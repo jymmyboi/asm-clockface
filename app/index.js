@@ -22,6 +22,8 @@ const stepsLabel = document.getElementById("stepsLabel");
 const goodWork = document.getElementById("goodWork");
 const batteryLabel = document.getElementById("batteryLabel");
 const batteryIcon = document.getElementById("batteryIcon");
+const dateLabel = document.getElementById("dateLabel");
+const monthLabel = document.getElementById("monthLabel");
 
 batteryLabel.text = ((battery.chargeLevel) + "%")
 batteryCalc();
@@ -31,6 +33,8 @@ clock.ontick = (evt) => {
   //Clock
   let now = evt.date;
   let hours = now.getHours();
+  let date = now.getDate();
+  let month = now.getMonth();
   if (preferences.clockDisplay === "12h") {
     // 12h format
     hours = hours % 12 || 12;
@@ -43,20 +47,19 @@ clock.ontick = (evt) => {
   
   // Step count
   if (appbit.permissions.granted("access_activity")) {
-    let stepsValue = (today.adjusted.steps);
-    try{
-      if (stepsValue >= 10000){
-        goodWork.style.opacity = 1;
-      } else {
-        goodWork.style.opacity = 0;
-      }
-        console.log(stepsValue);
-        stepsLabel.text = stepsValue;
-    } catch {
-        stepsLabel.text = 0;
+    let stepsValue = today.adjusted.steps;
+    if (stepsValue >= 10000){
+      goodWork.style.opacity = 1;
+    } else {
+      goodWork.style.opacity = 0;
     }
+      console.log(stepsValue);
+      stepsLabel.text = stepsValue;
   }
-  
+
+  console.log(date, month + 1);
+  dateLabel.text = date;
+  monthLabel.text = month + 1;
 }
 
 battery.onChange = (charger, evt) => {

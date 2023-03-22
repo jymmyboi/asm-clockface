@@ -6,6 +6,8 @@
   <image id="batteryIcon" />
   <text id="batteryLabel" />
   <text id="goodWork">Good work champ!</text>
+  <text id="dateLabel" />
+  <text id="monthLabel" />
 
 </svg>
 

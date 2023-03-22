@@ -46,6 +46,24 @@
   text-length: 4;
 }
 
+#dateLabel{
+  x:90%;
+  y: 45%;
+  fill: white;
+  font-size: 30;
+  font-family: System-Bold;
+  text-length: 4;
+}
+
+#monthLabel{
+  x:90%;
+  y: 55%;
+  fill: white;
+  font-size: 30;
+  font-family: System-Bold;
+  text-length: 4;
+}
+
 #goodWork {
   x:27%;
   y: 72%;
