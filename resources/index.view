@@ -1,8 +1,9 @@
 <svg class="background">
-  <image href="squircle.png" />  
+  <image href="background.png" />  
   <text id="myLabel" />
   <image id="stepsIcon" />
   <text id="stepsLabel" />
+  <text id="goodWork">Good work champ!</text>
 
 </svg>
 

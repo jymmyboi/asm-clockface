@@ -17,6 +17,7 @@ clock.granularity = "minutes";
 // Get a handle on the <text> element
 const myLabel = document.getElementById("myLabel");
 const stepsLabel = document.getElementById("stepsLabel")
+const goodWork = document.getElementById("goodWork")
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
@@ -35,6 +36,11 @@ clock.ontick = (evt) => {
   if (appbit.permissions.granted("access_activity")) {
     let stepsValue = (today.adjusted.steps);
     try{
+      if (stepsValue >= 10000){
+        goodWork.style.opacity = 1
+      } else {
+        goodWork.style.opacity = 0
+      }
         console.log(stepsValue);
         stepsLabel.text = stepsValue;
     } catch {
