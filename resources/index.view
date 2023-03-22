@@ -3,6 +3,8 @@
   <text id="myLabel" />
   <image id="stepsIcon" />
   <text id="stepsLabel" />
+  <image id="batteryIcon" />
+  <text id="batteryLabel" />
   <text id="goodWork">Good work champ!</text>
 
 </svg>

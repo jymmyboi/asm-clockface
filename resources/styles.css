@@ -30,6 +30,22 @@
   text-length: 5;
 }
 
+#batteryIcon {
+  height: 40;
+  width: 40;
+  x: 14%;
+  y: 50%;
+}
+
+#batteryLabel {
+  x:10%;
+  y: 45%;
+  fill: white;
+  font-size: 30;
+  font-family: System-Bold;
+  text-length: 4;
+}
+
 #goodWork {
   x:27%;
   y: 72%;
@@ -37,4 +53,6 @@
   font-size: 20;
   font-family: System-Bold;
 }
+
+
 
