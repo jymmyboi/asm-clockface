@@ -16,6 +16,7 @@ clock.granularity = "minutes";
 
 // Get a handle on the <text> element
 const myLabel = document.getElementById("myLabel");
+const stepsLabel = document.getElementById("stepsLabel")
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
@@ -33,8 +34,10 @@ clock.ontick = (evt) => {
   if (appbit.permissions.granted("access_activity")) {
     try{
         console.log(`${today.adjusted.steps} Steps`);
+        stepsLabel.text = `${today.adjusted.steps} Steps`;
     } catch {
-        console.log("Could not access steps")
+        console.log("Could not access steps");
+        stepsLabel.text = 0;
     }
  }
 }

@@ -12,13 +12,20 @@
   fill: white;
 }
 
-#mySteps {
-  font-size: 80;
-  font-family: System-Bold;
-  text-length: 32;
-  text-anchor: middle;
-  x: 50%;
-  y: 75%;
+#stepsIcon {
+  height: 50;
+  width: 35;
+  x:20%;
+  y:75%;
+  href: "stepicon.png";
   fill: white;
+}
+
+#stepsLabel {
+  x:35%;
+  y: 90%;
+  fill: white;
+  font-size: 70;
+  font-family: System-Bold;
 }
 

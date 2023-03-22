@@ -1,9 +1,8 @@
 <svg class="background">
   <image href="squircle.png" />  
   <text id="myLabel" />
-  <section x="10%" y="75%" width="100" height="20">
-    <image id="StepsIcon" />
-    <text id="stepsLabel" />
-  </section>
+  <image id="stepsIcon" />
+  <text id="stepsLabel" />
+
 </svg>
 

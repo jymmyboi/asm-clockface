@@ -9,7 +9,7 @@
   },
   "fitbit": {
     "appUUID": "a0adb4cf-cfa8-4b34-bbdf-75e55afc5567",
-    "appType": "app",
+    "appType": "clockface",
     "appDisplayName": "Asm Clockface",
     "iconFile": "resources/icon.png",
     "wipeColor": "#ffffff",
