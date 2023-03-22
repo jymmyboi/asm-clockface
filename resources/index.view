@@ -1,0 +1,8 @@
+<svg class="background">
+  <text id="myLabel" />
+</svg>
+
+<!-- <svg class="foreground">
+  <image href="Vertical-White.png" />
+  <text id="asmlogo" />
+</svg> -->

@@ -1,0 +1,18 @@
+.background {
+  viewport-fill: #CC7722;
+}
+
+#myLabel {
+  font-size: 80;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 20%;
+  fill: white;
+}
+
+/* #asmlogo {
+  x: 50%;
+  y: 50%;
+} */
