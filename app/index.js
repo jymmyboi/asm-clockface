@@ -1,6 +1,8 @@
 import clock from "clock";
 import * as document from "document";
 import { preferences } from "user-settings";
+import { me as appbit } from "appbit";
+import { goals } from "user-activity";
 
 function zeroPad(i) {
   if (i < 10) {
@@ -28,4 +30,11 @@ clock.ontick = (evt) => {
   }
   let mins = zeroPad(today.getMinutes());
   myLabel.text = `${hours}:${mins}`;
+  if (appbit.permissions.granted("access_activity")) {
+    try{
+        console.log(`${today.adjusted.steps} Steps`);
+    } catch {
+        console.log("Could not access steps")
+    }
+ }
 }

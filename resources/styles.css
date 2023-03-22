@@ -8,11 +8,17 @@
   text-length: 32;
   text-anchor: middle;
   x: 50%;
-  y: 20%;
+  y: 25%;
   fill: white;
 }
 
-/* #asmlogo {
+#mySteps {
+  font-size: 80;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
   x: 50%;
-  y: 50%;
-} */
+  y: 75%;
+  fill: white;
+}
+
