@@ -7,4 +7,4 @@ The watchface displays your step count for the day, along with a little an inspi
 <h2>Current todo list</h2>
 <ul>- Port to versa 2 and other watches (currently only Versa 3 and Sense)</ul>
 <ul>- Dip toes into working on android/samsung watch faces</ul>
-<br>Icons by Icons8
+<br>Battery icons by Icons8
