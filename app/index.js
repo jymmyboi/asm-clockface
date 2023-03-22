@@ -56,18 +56,18 @@ clock.ontick = (evt) => {
       console.log(stepsValue);
       stepsLabel.text = stepsValue;
   }
-
+  
+  //Date Month shenanigans
   console.log(date, month + 1);
   dateLabel.text = date;
   monthLabel.text = month + 1;
 }
 
 battery.onChange = (charger, evt) => {
-   
   batteryCalc();
-
 }
 
+// Function to change battery icons
 function batteryCalc(){
   batteryLabel.text = ((battery.chargeLevel) + "%");
     
