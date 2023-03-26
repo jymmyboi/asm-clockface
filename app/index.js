@@ -63,6 +63,8 @@ clock.ontick = (evt) => {
   // console.log(date, month + 1);
   dateLabel.text = zeroPad(date);
   monthLabel.text = zeroPad(month + 1);
+
+  batteryCalc();
 }
 
 battery.onChange = (evt) => {
