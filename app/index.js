@@ -65,7 +65,7 @@ clock.ontick = (evt) => {
   monthLabel.text = zeroPad(month + 1);
 }
 
-battery.onChange = (charger, evt) => {
+battery.onChange = (evt) => {
   batteryCalc();
 }
 
