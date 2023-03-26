@@ -13,11 +13,13 @@ function zeroPad(i) {
   return i;
 }
 
+
+
 // Update the clock every minute
 clock.granularity = "minutes";
 
 // Get a handle on the <text> element
-const myLabel = document.getElementById("myLabel");
+const clockLabel = document.getElementById("clockLabel");
 const stepsLabel = document.getElementById("stepsLabel");
 const goodWork = document.getElementById("goodWork");
 const batteryLabel = document.getElementById("batteryLabel");
@@ -43,7 +45,7 @@ clock.ontick = (evt) => {
     hours = zeroPad(hours);
   }
   let mins = zeroPad(now.getMinutes());
-  myLabel.text = `${hours}:${mins}`;
+  clockLabel.text = `${hours}:${mins}`;
   
   // Step count
   if (appbit.permissions.granted("access_activity")) {
@@ -53,12 +55,12 @@ clock.ontick = (evt) => {
     } else {
       goodWork.style.opacity = 0;
     }
-      console.log(stepsValue);
+      // console.log(stepsValue);
       stepsLabel.text = stepsValue;
   }
   
   //Date Month shenanigans
-  console.log(date, month + 1);
+  // console.log(date, month + 1);
   dateLabel.text = zeroPad(date);
   monthLabel.text = zeroPad(month + 1);
 }
@@ -69,7 +71,7 @@ battery.onChange = (charger, evt) => {
 
 // Function to change battery icons
 function batteryCalc(){
-  batteryLabel.text = ((battery.chargeLevel) + "%");
+  batteryLabel.text = ((zeroPad(battery.chargeLevel)) + "%");
     
   if (charger.connected === true) {
     batteryIcon.href = "batteries/charging-battery.png"
@@ -78,7 +80,7 @@ function batteryCalc(){
       batteryIcon.href = "batteries/full-battery.png";
     } else if (battery.chargeLevel > 60){
       batteryIcon.href = "batteries/used-battery.png"
-    } else if (battery.chargeLevel > 40){
+    } else if (battery.chargeLevel > 30){
       batteryIcon.href = "batteries/half-battery.png"
     } else if (battery.chargeLevel > 25){
       batteryIcon.href = "batteries/low-battery.png"

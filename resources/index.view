@@ -1,6 +1,6 @@
 <svg class="background">
   <image href="background.png" />  
-  <text id="myLabel" />
+  <text id="clockLabel" />
   <image id="stepsIcon" />
   <text id="stepsLabel" />
   <image id="batteryIcon" />

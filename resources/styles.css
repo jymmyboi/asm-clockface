@@ -2,7 +2,7 @@
   viewport-fill: #CC7722;
 }
 
-#myLabel {
+#clockLabel {
   font-size: 80;
   font-family: System-Bold;
   text-length: 32;
@@ -15,14 +15,14 @@
 #stepsIcon {
   height: 50;
   width: 35;
-  x:25%;
+  x:26%;
   y:75%;
   href: "stepsicon.png";
   fill: white;
 }
 
 #stepsLabel {
-  x:40%;
+  x:42%;
   y: 87%;
   fill: white;
   font-size: 50;
@@ -34,21 +34,22 @@
   height: 40;
   width: 40;
   x: 14%;
-  y: 45%;
+  y: 50%;
 }
 
 #batteryLabel {
-  x:10%;
-  y: 45%;
+  x:12%;
+  y: 50%;
   fill: white;
   font-size: 30;
   font-family: System-Bold;
   text-length: 4;
+  text-align: center;
 }
 
 #dateLabel{
   x: 74%;
-  y: 45%;
+  y: 50%;
   fill: white;
   font-size: 35;
   font-family: System-Regular;
@@ -57,7 +58,7 @@
 
 #monthLabel{
   x:74%;
-  y: 55%;
+  y: 60%;
   fill: white;
   font-size: 35;
   font-family: System-Bold;
@@ -65,7 +66,7 @@
 }
 
 #goodWork {
-  x:27%;
+  x:29%;
   y: 72%;
   fill: white;
   font-size: 20;
