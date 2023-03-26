@@ -38,13 +38,13 @@
 }
 
 #batteryLabel {
-  x:12%;
+  x: 20%;
   y: 50%;
   fill: white;
   font-size: 30;
   font-family: System-Bold;
   text-length: 4;
-  text-align: center;
+  text-anchor: middle;
 }
 
 #dateLabel{
@@ -66,11 +66,12 @@
 }
 
 #goodWork {
-  x:29%;
+  x:38%;
   y: 72%;
   fill: white;
   font-size: 20;
   font-family: System-Bold;
+  text-align: center;
 }
 
 

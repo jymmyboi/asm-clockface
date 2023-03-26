@@ -5,7 +5,7 @@
   <text id="stepsLabel" />
   <image id="batteryIcon" />
   <text id="batteryLabel" />
-  <text id="goodWork">Good work champ!</text>
+  <text id="goodWork">Good work!</text>
   <text id="dateLabel" />
   <text id="monthLabel" />
 
