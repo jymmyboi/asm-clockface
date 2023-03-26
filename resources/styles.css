@@ -34,7 +34,7 @@
   height: 40;
   width: 40;
   x: 14%;
-  y: 50%;
+  y: 45%;
 }
 
 #batteryLabel {
@@ -47,19 +47,19 @@
 }
 
 #dateLabel{
-  x:90%;
+  x: 74%;
   y: 45%;
   fill: white;
-  font-size: 30;
-  font-family: System-Bold;
+  font-size: 35;
+  font-family: System-Regular;
   text-length: 4;
 }
 
 #monthLabel{
-  x:90%;
+  x:74%;
   y: 55%;
   fill: white;
-  font-size: 30;
+  font-size: 35;
   font-family: System-Bold;
   text-length: 4;
 }
@@ -71,6 +71,7 @@
   font-size: 20;
   font-family: System-Bold;
 }
+
 
 
 
